@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timer_wrapper">
+        <div class="timer_outer-ellips">
+            <svg
+                class="progress-ring"
+                height="518"
+                width="518"
+                >
+                <defs>
+                    <radialGradient id="gradient" cx="93.34%" cy="44.69%">
+                    <stop offset="0%" stop-color="#000000" />
+                    <stop  id ='gradient-primary' offset="100%"/>
+                    </radialGradient>
+                 </defs>
+                <circle
+                    class="progress-ring__circle"
+                    stroke = "url(#gradient)"
+                    stroke-width="18"
+                    fill="transparent"
+                    r="250"
+                    cx="259"
+                    cy="259"
+                />
+            </svg>
+        <div class="timer_ellips">
+            <input class="timer_counter" disabled type="text" id="timer" placeholder="00:00">
+            <button class="timer_button active" id="start">START</button>
+            <button class="timer_button" id="stop">STOP</button>
+            <button class="timer_settings active" id="settings"><img src="./images/gear.svg" alt=""></button>
+            <button class="timer_settings" id="confirm"><img src="./images/check.svg" alt=""></button>
+        </div>
+        </div>
+    </div>
+    <div class="modal_overlay" id="modal">
+        <div class="modal_wrapper">
+            <h2 class="modal_text modal_message">Time is out!</h2>
+            <button class="modal_text modal_button" id ="modal-button">OK</button>
+        </div>
+    </div>
+     <script type = "module" src ="./index.js"></script>
+     <script src="https://unpkg.com/imask"></script>
+</body>
+</html>
