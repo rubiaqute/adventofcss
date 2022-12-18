@@ -1,0 +1,11 @@
+{
+  "name": "ecomm",
+  "version": "1.0.0",
+  "description": "advent of css challenge 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rubiaqute",
+  "license": "ISC"
+}
