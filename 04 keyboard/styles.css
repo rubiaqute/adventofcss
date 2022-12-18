@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #60C1B6;
+}
+
+.score.nullable {
+    color:rgba(240, 73, 73, 0.727)
+}
+
+.keyboard {
+    box-sizing: border-box;
+    width: 1198px;
+    padding: 43px 50px 44px 40px;
+    background-color: #F7F7F7;
+    border-radius: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.keybord-button {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.keybord-button.long {
+    color: #868888;
+    flex-grow: 1;
+}
+
+.animated {
+  animation: jiggle 1.5s infinite;
+  box-shadow: 0px 1px 8px rgba(199, 90, 90, 0.473);
+}
+
+@keyframes jiggle {
+    0% { transform: rotate(0deg); }
+   25% { transform: rotate(10deg); }
+   50% { transform: rotate(0deg); }
+   75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 34, 34, 0.73);
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    display: none;
+}
+
+.overlay.show {
+    display: flex;
+}
+
+.modal {
+    position: relative;
+    overflow-y: hidden;
+    width: 40%;
+    height: 200px;
+    border: 1px solid #60C1B6;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    z-index: 201;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button {
+    all:unset;
+    text-align: center;
+    padding: 2% 5%;
+    border: 1px solid #60C1B6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
