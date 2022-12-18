@@ -1,0 +1,13 @@
+path { 
+    fill:inherit;
+    stroke:inherit;
+}
+
+svg {
+    fill: #000;
+}
+
+svg:hover {
+    cursor: pointer;
+    fill: #f40082;
+}
