@@ -21,3 +21,7 @@ The detailed description for every challenge can be found in README files in cor
 5. Keyboard
 - Deploy: https://rubiaqute-checkboxes.netlify.app/
 - Technologies: HTML/CSS
+
+6. Range slider
+- Deploy: https://rubiaqute-rangeslider.netlify.app/
+- Technologies: HTML/JS/CSS

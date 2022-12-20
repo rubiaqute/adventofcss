@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262529;
+
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 93.7698px;
+    line-height: 118px;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 60px 54px 71px 78px;
+    width: 830px;
+    background: #262529;
+    box-shadow: 0px 0px 250px #000000;
+    border-radius: 20px;
+}
+
+.price {
+    text-align: center;
+    color: #FFC700;
+}
+
+.range-slider {
+    -webkit-appearance: none;
+    background-color: transparent;
+    margin: 71px auto 68px;
+    width: 698px;
+}
+
+.range-slider::-webkit-slider-runnable-track {
+    height: 13.6px;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #EA346F;
+    margin-top: -18px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 15px rgba(234, 52, 111, 0.2);;
+}
+
+.range-slider::-webkit-slider-thumb:hover {
+   cursor: pointer;
+}
+
+
+.button {
+    width: 333px;
+    padding: 35px 52px;
+    border: none;
+    display: block;
+    background: #333139;
+    border-radius: 100px;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s ease-out;
+}
