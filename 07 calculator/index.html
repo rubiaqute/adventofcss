@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="tip-block">
+            <div>Tip Amount</div>
+            <div class="block-value"><span class="currency-sign">$</span><span id = "tipsBlock">0.00</span></div>
+        </div>
+        <div class="tip-block">
+            <div>Total Per Person</div>
+            <div class="block-value"><span class="currency-sign">$</span><span id = "tipsPerPersonBlock">0.00</span></div>
+        </div>
+        <div class="input-blocks">
+            <div class="input-block wide">
+                <div class="input-field">
+                    <img src="./images/dollar.svg" alt="">
+                    <input class="input" type="number" min="0" step="0.01" value = "100" id = "billAmount">
+                </div>
+                <div class="input-label">Bill Amount</div>
+            </div>
+            <div class="input-block">
+                <div class="input-field">
+                    <img src="./images/people.svg" alt="">
+                    <input class="input" type="number" min="0" max = '100' step="1" value = "1" id = "peopleNumber">
+                </div>
+                <div class="input-label">Number of People</div>
+            </div>
+        </div>
+        <div class='choice-block'>
+            <div class="choice-item">5%</div>
+            <div class="choice-item">10%</div>
+            <div class="choice-item">15%</div>
+            <div class="choice-item selected">20%</div>
+        </div>
+        <div class='confirmation-block'>
+            <button class="button" id = "submitButton">Calculate</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

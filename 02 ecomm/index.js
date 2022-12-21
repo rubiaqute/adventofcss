@@ -59,7 +59,6 @@ const App = {
       const menuItemToAdd = this.menuItems.find((item) => item.id === id);
       menuItemToAdd.quantity = 1;
       this.selectedMenuItems.push(menuItemToAdd);
-      console.log(this.selectedMenuItems);
     },
 
     isInCart(id) {

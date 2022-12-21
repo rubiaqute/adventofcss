@@ -18,10 +18,14 @@ The detailed description for every challenge can be found in README files in cor
 - Deploy: https://rubiaqute-keyboard.netlify.app/
 - Technologies: HTML/JS/CSS
 
-5. Keyboard
+5. Checkboxes
 - Deploy: https://rubiaqute-checkboxes.netlify.app/
 - Technologies: HTML/CSS
 
 6. Range slider
 - Deploy: https://rubiaqute-rangeslider.netlify.app/
+- Technologies: HTML/JS/CSS
+
+7. Tip calculator
+- Deploy: https://rubiaqute-tipcalculator.netlify.app/
 - Technologies: HTML/JS/CSS
