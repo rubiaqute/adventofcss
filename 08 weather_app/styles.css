@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E9F5FA;
+    font-family: 'Krona One';
+    font-weight: 400;
+
+    color: #4DB0D3;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 1440px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.input-block {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-bottom: 24px;
+    font-size: 36px;
+}
+
+.input {
+    all: unset;
+    font-family: 'Krona One';
+    font-weight: 400;
+    font-size: 24px;
+    border-bottom: 3px solid #4DB0D3;
+
+    color: #4DB0D3;
+}
+
+.error {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 52px;
+}
+
+.cards {
+    width: 1309px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.item {
+    width: 165px;
+    text-align: center;
+}
+
+.week {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+}
+
+.day {
+    font-size: 73.31px;
+    line-height: 92px;
+    margin-bottom: 14.5px;
+}
+
+.weather-info {
+    font-family: 'Oswald';
+    height: 525px;
+    background: #4DB0D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 11px 4px 34px rgba(32, 77, 92, 0.7);
+    border-radius: 50px;
+    color: #D3EBF4;
+    text-align: center;
+    padding-bottom: 27px;
+}
+
+.img {
+    width:205px;
+    height: 205px;
+    margin-left: -20px;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 27px;
+    font-size: 110px;
+    line-height: 163px;
+}
+
+.sign {
+    font-size: 48px;
+    line-height: 48px; 
+}
+
+.block-value {
+    font-family: 'Krona One';
+    font-size: 16px;
+    line-height: 20px;
+    color: #D3EBF4;
+}
+
+.svg {
+    fill: #D3EBF4;
+}
+
+.info-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    align-items: center;
+    width: 60%;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.cloudy {
+    background-color: #4DB0D3;
+    color: #E6DF95
+}
+
+.svg.cloudy {
+    fill: #D3EBF4
+}
+
+.block-value.cloudy {
+    color: #D3EBF4
+}
+
+.stormy {
+    background-color: #0E2E3A;
+    color: #E6DF95;
+}
+
+.svg.stormy {
+    fill: #D3EBF4
+}
+
+.block-value.stormy {
+    color: #D3EBF4
+}
+
+.rainy {
+    background-color: #2B8BAD;
+    color: #E6DF95
+}
+
+.svg.rainy {
+    fill: #D3EBF4
+}
+
+.block-value.rainy {
+    color: #D3EBF4
+}
+
+.snowy {
+    background-color: #BCE1EF;
+    color: #0E2E3A;
+}
+
+.svg.snowy {
+    fill: #247490
+}
+
+.block-value.snowy {
+    color: #247490
+}
+
+.sunny {
+    background-color: #E6DF95;
+    color: #4DB0D3
+}
+
+.svg.sunny {
+    fill: #247490
+}
+
+.block-value.sunny {
+    color: #247490
+}
+
+.partly {
+    background-color: #2B8BAD;
+    color: #E6DF95
+}
+
+.svg.partly {
+    fill: #D3EBF4
+}
+
+.block-value.partly {
+    color: #D3EBF4
+}

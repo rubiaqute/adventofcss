@@ -29,3 +29,7 @@ The detailed description for every challenge can be found in README files in cor
 7. Tip calculator
 - Deploy: https://rubiaqute-tipcalculator.netlify.app/
 - Technologies: HTML/JS/CSS
+
+8. Weather app
+- Deploy: https://rubiaqute-weather-app.netlify.app/
+- Technologies: HTML/Vue/CSS
