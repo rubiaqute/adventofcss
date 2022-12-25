@@ -33,3 +33,7 @@ The detailed description for every challenge can be found in README files in cor
 8. Weather app
 - Deploy: https://rubiaqute-weather-app.netlify.app/
 - Technologies: HTML/Vue/CSS
+
+8. Image carousel
+- Deploy: https://rubiaqute-carousel.netlify.app/
+- Technologies: HTML/Swiper/CSS
