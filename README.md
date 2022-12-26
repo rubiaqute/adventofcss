@@ -34,6 +34,10 @@ The detailed description for every challenge can be found in README files in cor
 - Deploy: https://rubiaqute-weather-app.netlify.app/
 - Technologies: HTML/Vue/CSS
 
-8. Image carousel
+9. Image carousel
 - Deploy: https://rubiaqute-carousel.netlify.app/
 - Technologies: HTML/Swiper/CSS
+
+10. Verification code
+- Deploy: https://rubiaqute-verification-code.netlify.app/
+- Technologies: HTML/JS/CSS + IMask
