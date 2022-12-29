@@ -4,7 +4,7 @@ The detailed description for every challenge can be found in README files in cor
 
 1. Timer
 - Deploy: https://rubiaqute-timer.netlify.app/
-- Technologies: HTML/JS/CSS + Imask
+- Technologies: HTML/JS/CSS + IMask
 
 2. Ecomm
 - Deploy: https://rubiaqute-ecomm.netlify.app/
@@ -41,3 +41,7 @@ The detailed description for every challenge can be found in README files in cor
 10. Verification code
 - Deploy: https://rubiaqute-verification-code.netlify.app/
 - Technologies: HTML/JS/CSS + IMask
+
+11. Expanding blocks
+- Deploy: https://rubiaqute-verification-code.netlify.app/
+- Technologies: HTML/CSS

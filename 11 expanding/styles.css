@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+ body {
+    margin: 0;
+    padding: 178px 0 24px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.block:first-child {
+    margin-bottom: 58px;
+}
+
+.title-block {
+    display: flex;
+    margin: auto;
+    width: 954px;
+    height: 115px;
+    border: 5px solid #000000;
+    z-index: 1;
+}
+
+.icon-block {
+    position: relative;
+    min-width: 97px;
+    background-color: #000000;
+}
+
+.icon {
+    position: absolute;
+    width: 70px;
+    height: 129px;
+    top: -34px;
+    left: 11px;
+    background: center no-repeat transparent url("./images/question-2.svg");
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    background-color: #fff;
+}
+
+.details-block {
+    position: relative;
+    background-color: #FFDD00;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 43px;
+    min-height: 115px;
+    width: 954px;
+    margin-top: -95px;
+    margin-left: 94px;
+    padding: 0 85px 55px 71px;
+}
+
+.details-block.colored {
+    background-color: #F0F0F0;
+}
+
+.label {
+    width: 24px;
+    height: 24px;
+    background: center no-repeat url('./images/chevron.svg');
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+
+.label:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.checkbox {
+    display: none;
+}
+
+.toggle-content {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.toggle-item:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.checkbox:checked ~ .toggle-content {
+    padding-top: 125px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+    max-height: inherit;
+}
+
+.checkbox:checked ~ .label {
+    background: center no-repeat url('./images/cross.svg');
+}
