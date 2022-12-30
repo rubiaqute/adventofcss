@@ -49,3 +49,7 @@ The detailed description for every challenge can be found in README files in cor
 12. Rock-scissors-paper game
 - Deploy: https://rubiaqute-rock-scissors-paper.netlify.app/
 - Technologies: HTML/Vue/CSS
+
+13. Custom modal
+- Deploy: https://rubiaqute-modal.netlify.app/
+- Technologies: HTML/JS/CSS

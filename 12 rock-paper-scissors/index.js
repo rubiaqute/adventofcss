@@ -12,6 +12,7 @@ const App = {
       currentPage: pages.start,
     };
   },
+
   methods: {
     getImage(item) {
       return `./images/${item}.png`;
@@ -39,9 +40,7 @@ const App = {
     restartGame() {
       this.selectedItem = null;
       this.computerItem = null;
-
       this.currentPage = pages.start;
-
     }
   },
 
