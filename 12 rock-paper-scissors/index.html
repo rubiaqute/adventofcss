@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Rock Paper Scissors Game</title>
+    <style>
+      [v-cloak]{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="container" v-cloak id="app">
+        <div class="start-page" v-if="isStartPage">
+            <div class="message">pick one</div>
+            <div class="selection-block">
+                <div class='selection-item' v-for="item in choiceItems" @click="selectItem(item)">
+                    <img class="pick-image" :src="getImage(item)" alt="">
+                    <div>{{item}}</div>
+                </div>
+            </div>
+        </div>
+        <div :class="['result-page', getBackgroundClass()]" v-if="!isStartPage">
+            <div :class="['result-message', getBackgroundClass()]">{{isUserWin ? 'you win' : 'computer wins'}}</div>
+            <div class="images-block">
+                <img class="result-image" :src="getImage(selectedItem)" alt="">
+                <img class="result-image" :src="getImage(computerItem)" alt="">
+            </div>
+            <button class="button" @click="restartGame()">play again?</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="index.js"></script>
+</body>
+</html>

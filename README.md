@@ -45,3 +45,7 @@ The detailed description for every challenge can be found in README files in cor
 11. Expanding blocks
 - Deploy: https://rubiaqute-verification-code.netlify.app/
 - Technologies: HTML/CSS
+
+12. Rock-scissors-paper game
+- Deploy: https://rubiaqute-rock-scissors-paper.netlify.app/
+- Technologies: HTML/Vue/CSS
