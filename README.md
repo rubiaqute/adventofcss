@@ -53,3 +53,7 @@ The detailed description for every challenge can be found in README files in cor
 13. Custom modal
 - Deploy: https://rubiaqute-modal.netlify.app/
 - Technologies: HTML/JS/CSS
+
+14. Calendar
+- Deploy: https://rubiaqute-calendar.netlify.app/
+- Technologies: HTML/Vue/CSS

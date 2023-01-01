@@ -1,0 +1,79 @@
+body {
+    all: unset;
+    background-color: #FBFBFB;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datepicker {
+    box-sizing: border-box;
+    width: 824px;
+    height: 765px;
+    padding: 62px 136px 102px 116px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2.88403px 49.0285px rgba(0, 0, 0, 0.25);
+    border-radius: 28.8403px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.month {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 39.9036px;
+    line-height: 59px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease-out;
+}
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    padding-bottom: 34px;
+}
+
+.weekdays {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 39.9036px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.day {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 39.9036px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.circle {
+    width: 71.95px;
+    height: 71.95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle.selected {
+    background: #FFD200;
+}

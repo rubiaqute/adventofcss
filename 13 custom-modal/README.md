@@ -1,4 +1,4 @@
-Custom modal weas made as one of the challenges in Advent of CSS 2022 (https://www.adventofcss.com/)
+Custom modal was made as one of the challenges in Advent of CSS 2022 (https://www.adventofcss.com/)
 
 Deploy: https://rubiaqute-modal.netlify.app/
 

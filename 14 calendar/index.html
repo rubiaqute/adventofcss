@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Calendar</title>
+    <style>
+        [v-cloak]{
+          display: none;
+        }
+      </style>
+</head>
+<body>
+    <div class="datepicker" id="app" v-cloak>
+        <div class="header">
+            <img src="./images/previous.svg" alt="arrow" class="arrow" @click="goToPreviousMonth()"/>
+            <div class="month">{{getRussianMonth}}</div>
+            <img src="./images/next.svg" alt="arrow" class="arrow" @click = "goToNextMonth()"/>
+        </div>
+        <table class="table">
+            <thead>
+            <th class="weekdays" v-for="weekDay in weekDays">
+                {{weekDay}}
+            </th>
+        </thead>
+        <tbody>
+            <tr v-for="indexRow in rows">
+                <td class="day" v-for="day, indexDay in weekDays">
+                    <div :class="{circle: true, selected: isCurrentDate(indexDay, indexRow)}">
+                        {{getDay(indexDay, indexRow)}}
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

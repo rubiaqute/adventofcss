@@ -15,5 +15,5 @@ Deploy: https://rubiaqute-ecomm.netlify.app/
 Some features from me:
 
 1. Custom scrollBar
-2. Button with icon trash when quantity of selected position is 1.
+2. Button with icon trash when quantity of selected position is 0.
 
