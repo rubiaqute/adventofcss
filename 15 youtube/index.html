@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Youtube search</title>
+    <style>
+        [v-cloak]{
+          display: none;
+        }
+      </style>
+</head>
+<body>
+    <div class="container" id="app" v-cloak>
+        <div class="search-block">
+            <img src="./images/logo.png" alt="">
+            <input type="text" @change="getVideos()" v-model="searchQuery" placeholder="Find video ..." class="input">
+        </div>
+        <div class="blocks">
+        <div class="main-block">
+            <a :href="getFirstVideoLink"><img class='main-image' :src="getVideoImage" alt="" target="_blank"></a>
+            <div class="title">{{getFirstVideoTitle}}</div>
+            <div class="description">{{getFirstVideoDescription}}</div>
+        </div>
+        <div class="extra-blocks">
+            <div  v-for="video in videoData">
+            <a class="extra-block" :href="getLink(video.id.videoId)" target="_blank">
+                <img class="extra-image" :src="video.snippet?.thumbnails?.default?.url" alt="">
+                <div class="extra-title">{{video?.snippet?.title || ''}}</div>
+            </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -57,3 +57,7 @@ The detailed description for every challenge can be found in README files in cor
 14. Calendar
 - Deploy: https://rubiaqute-calendar.netlify.app/
 - Technologies: HTML/Vue/CSS
+
+15. Calendar
+- Deploy: https://rubiaqute-youtube-search.netlify.app/
+- Technologies: HTML/Vue/CSS
