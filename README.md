@@ -58,10 +58,15 @@ The detailed description for every challenge can be found in README files in cor
 - Deploy: https://rubiaqute-calendar.netlify.app/
 - Technologies: HTML/Vue/CSS
 
-15. Calendar
+15. Youtube search
 - Deploy: https://rubiaqute-youtube-search.netlify.app/
 - Technologies: HTML/Vue/CSS
 
 16. Star rating
 - Deploy: https://rubiaqute-stars.netlify.app/
 - Technologies: HTML/JS/CSS
+
+17. Article with sidebar
+- Deploy: https://rubiaqute-sidebar.netlify.app/
+- Technologies: HTML/JS/CSS + Tailwind
+
