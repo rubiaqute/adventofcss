@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Password generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-block">
+            <input type="text" disabled id ="password" class="input" value="">
+            <img class="copy-button" id ="copyButton" src="./images/copy.svg" alt="">
+            <div class="copy-label" id="copyLabel">COPIED</div>
+
+        </div>
+        <div class="range-block">
+            <input type="range" class = "range-slider" id = "range" min="5" max="20" step="1" value ="12">
+            <div class="range-label" id="passwordLength"></div>
+        </div>
+        <div class="checkbox-block">
+            <div class="checkbox-item">
+                <input type="checkbox" class="custom-checkbox" id="symbolsCheckbox">
+                <label for="symbolsCheckbox">Include Symbols <span class="addition-label">(@#$%)</span></label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" class="custom-checkbox" id="numbersCheckbox">
+                <label for="numbersCheckbox">Include Numbers <span class="addition-label">(1234)</span></label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" class="custom-checkbox" id="lowercaseCheckbox">
+                <label for="lowercaseCheckbox">Include Lowercase Characters <span class="addition-label">(abcd)</span></label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" class="custom-checkbox" id="uppercaseCheckbox">
+                <label for="uppercaseCheckbox">Include Uppercase Characters <span class="addition-label">(ABCD)</span></label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" class="custom-checkbox" id="similarCheckbox">
+                <label for="similarCheckbox">Exclude Similar Characters <span class="addition-label">(i, l, 1, L, o, 0, O)</span></label>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
