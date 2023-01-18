@@ -1,0 +1,162 @@
+body {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 454px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 68px;
+
+    margin-bottom: 29px;
+}
+
+.fieldset {
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 19px 16px;
+    border: 2px solid #D5D5D5;
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+    max-height: 72px;
+    height: 62px;
+}
+
+.fieldset-with-legend {
+    padding: 18px 19px 16px;
+    height: 72px;
+    padding-block-start: 0.3em;
+}
+
+.fieldset:focus-within {
+    border: 2px solid #1400FF;
+}
+
+.field:invalid > .checkmark {
+    display: block;
+}
+
+.field {
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    width: 100%;
+
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255,1);
+}
+
+.field::placeholder {
+    color: #1400FF;
+}
+
+.legend {
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 14px;
+
+    color: #1400FF;
+}
+
+.checkmark {
+    position: absolute;
+    top: 20px;
+    right: -370px;
+    width: 360px;
+
+    display: none;
+    gap: 7px;
+    align-items: center;
+}
+
+.fieldset-with-legend > .checkmark {
+    top: 10px;
+}
+
+.checkmark.touched {
+    display: flex;
+}
+
+.checkmark.error > .icon {
+    background: url('./images/error.svg');
+}
+
+.checkmark.error > .error-message {
+    display: block;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+
+    background: url('./images/success.svg');
+}
+
+.error-message {
+    display: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+
+    color: #FF0000;
+}
+
+.eye {
+    position: absolute;
+    top: 20px;
+    right: 19px;
+
+    width: 30px;
+    height:20px;
+    background: url("./images/hide.svg");
+}
+
+.eye:hover {
+    cursor: pointer;
+}
+
+.eye.crossed {
+    background: url("./images/show.svg");
+}
+
+.button {
+    width: 100%;
+    height: 62px;
+    background-color: #1400FF;
+    color:#fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+
+    border-radius: 4px;
+    border: none;
+}
+
+.button:disabled,
+.button:disabled:hover {
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+
+.button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}

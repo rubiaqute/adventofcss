@@ -70,7 +70,11 @@ The detailed description for every challenge can be found in README files in cor
 - Deploy: https://rubiaqute-sidebar.netlify.app/
 - Technologies: HTML/JS/CSS + Tailwind
 
-17. Password generator
+18. Password generator
 - Deploy: https://rubiaqute-password-generator.netlify.app/
+- Technologies: HTML/JS/CSS
+
+19. Sign-up form with validation
+- Deploy: https://rubiaqute-sign-up-form.netlify.app/
 - Technologies: HTML/JS/CSS
 

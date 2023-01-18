@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Signup</div>
+        <form id="form">
+            <fieldset class="fieldset fieldset-with-legend">
+                <legend class="legend">Name</legend>
+                <input class="field" type="text" placeholder="Name" id="nameInput" minlength="4" autocomplete="off">
+                <div class="checkmark" id="nameCheckmark">
+                    <div class="icon"></div>
+                    <div class="error-message">The name must be at least 4 characters</div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset fieldset-with-legend">
+                <legend class="legend">Email</legend>
+                <input class="field" type="email" placeholder="Email" id="emailInput" autocomplete="off">
+                <div class="checkmark" id="emailCheckmark">
+                    <div class="icon"></div>
+                    <div class="error-message">This e-mail is not valid.</div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <input class="field" type="password" placeholder="Password" pattern="[0-9a-fA-F]{4,16}" id="passwordInput" autocomplete="off">
+                <div class="eye" id="passwordEye"></div>
+                <div class="checkmark" id="passwordCheckmark">
+                    <div class="icon"></div>
+                    <div class="error-message">This password is not valid.</div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <input class="field" type="password" placeholder="Confirm password" id="confirmPasswordInput" autocomplete="off">
+                <div class="eye" id="confirmPasswordEye"></div>
+                 <div class="checkmark" id="confirmPasswordCheckmark">
+                    <div class="icon"></div>
+                    <div class="error-message">Passwords are not the same</div>
+                </div>
+            </fieldset>
+            <button class="button" id="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
