@@ -78,3 +78,7 @@ The detailed description for every challenge can be found in README files in cor
 - Deploy: https://rubiaqute-sign-up-form.netlify.app/
 - Technologies: HTML/JS/CSS
 
+20. Tabs panel
+- Deploy: https://rubiaqute-tabs.netlify.app/
+- Technologies: HTML/Vue/CSS
+
