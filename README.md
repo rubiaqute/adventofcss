@@ -43,7 +43,7 @@ The detailed description for every challenge can be found in README files in cor
 - Technologies: HTML/JS/CSS + IMask
 
 11. Expanding blocks
-- Deploy: https://rubiaqute-verification-code.netlify.app/
+- Deploy: https://rubiaqute-expanding.netlify.app/
 - Technologies: HTML/CSS
 
 12. Rock-scissors-paper game
@@ -81,4 +81,8 @@ The detailed description for every challenge can be found in README files in cor
 20. Tabs panel
 - Deploy: https://rubiaqute-tabs.netlify.app/
 - Technologies: HTML/Vue/CSS
+
+21. Simplified budget
+- Deploy: https://rubiaqute-budget.netlify.app/
+- Technologies: Vue + vue-imask
 
