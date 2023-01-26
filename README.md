@@ -86,3 +86,7 @@ The detailed description for every challenge can be found in README files in cor
 - Deploy: https://rubiaqute-budget.netlify.app/
 - Technologies: Vue + vue-imask
 
+22. Credit card form
+- Deploy: https://rubiaqute-credit-card.netlify.app/
+- Technologies: HTML/Vue/CSS + Imask
+

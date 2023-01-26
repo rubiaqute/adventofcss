@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Courier+Prime:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Credit Card Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="first-row">
+            <div class="card-number-block">
+                <div class="label">Card Number</div>
+                <input class="input input-first-row" id ="cardNumber" type="text" placeHolder="Input card number">
+            </div>
+            <div class="card-holder-blocK">
+                <div class="label">Card Name</div>
+                <input class="input input-first-row" id="name" type="text" placeHolder="Input cardholder Name">
+            </div>
+
+        </div>
+        <div class="second-row">
+            <div class="select-block">
+                <div class="label">Expiration Date</div>
+                <div class="select">
+                    <select class="input select-second-row" id="selectMonth" autocomplete="off">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <img class="arrow" src="./images/arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="select-block">
+                <div class="select">
+                    <select class="input select-second-row" id="selectYear" autocomplete="off">
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                        <option>2031</option>
+                        <option>2032</option>
+                        <option>2033</option>
+                    </select>
+                    <img class="arrow" src="./images/arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="cvv-block">
+                <div class="label">CVV</div>
+                <input class="input input-second-row" id="cvv" type="text" value ="">
+            </div>
+        </div>
+        <button class="button">Update</button>
+        <div class="card" id="card">
+            <div class=" card-data card-number" id="filledCardNumber">0000 0000 0000 0000</div>
+            <div class=" card-data expiration-date" id="filledExpired">00/0000</div>
+            <div class=" card-data card-name" id="filledName"></div>
+            <div class="flip-side">
+                <div class="flip-name" id="filledSignature"></div>
+                <div class="flip-cvv" id="filledCvv">000</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

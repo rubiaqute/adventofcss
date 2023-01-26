@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FBE6DB;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.container {
+    width: 893px;
+    height: 665px;
+    position: relative;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.25), 0px 0px 95px #F5C7BD;
+    border-radius: 30px;
+
+    margin-top: 244px;
+    padding: 283px 63px 0;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 19px;
+
+    margin-bottom: 8px;
+}
+
+.input {
+    all: unset;
+    box-sizing: border-box;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 21px 27px;
+}
+
+.input-first-row {
+    width: 363px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 38px;
+}
+
+.select {
+    position: relative;
+    background-color: transparent;
+}
+
+.select-second-row {
+    width: 227px;
+    margin-right: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 27px;
+    right: 43px;
+    pointer-events: none;
+}
+
+
+.input-second-row {
+    width: 227px;
+}
+
+.cvv-block {
+    margin-left: 35px;
+}
+
+.button {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    background: #7D193E;
+    border-radius: 12px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    color: #FEFEFE;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.card {
+    position: absolute;
+    background: url('./images/cc__visa--front.png') center;
+    width: 669px;
+    height: 464px;
+    top: -192px;
+    left: 110px;
+
+    font-family: 'Courier Prime';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+
+    filter: drop-shadow(0px 9px 24px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 95px #E2CDC8);
+    border-radius: 8px;
+}
+
+.card.american {
+    background: url('./images/cc__american--front.png') bottom -50px right -100px;;
+    background-size: 861px 558px;
+}
+
+.card.american.flip {
+    background: url('./images/cc__american--back.png') center;
+}
+
+.card.discover {
+    background: url('./images/cc__discover--front.png') center;
+}
+
+.card.discover.flip {
+    background: url('./images/cc__discover--back.png') center;
+}
+
+.card.mastercard {
+    background: url('./images/cc__mastercard--front.png') center;
+}
+
+.card.mastercard.flip {
+    background: url('./images/cc__mastercard--back.png') center;
+}
+
+.card.flip {
+    background: url('./images/cc__visa--back.png') center;
+}
+
+.card.flip > .card-data {
+    display: none;
+}
+
+.flip-side {
+    display: none;
+}
+
+.card.flip > .flip-side {
+    display: flex;
+}
+
+.card-data {
+    background: linear-gradient(180deg, #FFFFFF 15.34%, #DBDBDB 21.24%, #FFFFFF 37.13%, rgba(188, 203, 217, 0.68) 48.94%, rgba(255, 255, 255, 0.830204) 58.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-number {
+    margin: 206px 34px 36px 60px;
+    font-size: 42px;
+    line-height: 47px;
+}
+
+.expiration-date {
+    margin-left: 359px;
+}
+
+.card-name {
+    margin-top: 40px;
+    margin-left: 55px;
+}
+
+.flip-side {
+    margin: 159px 25px 0 57px;
+    display: none;
+    justify-content: space-between;
+}
+
+.flip-name {
+    font-family: 'Beth Ellen';
+    font-weight: 400;
+    font-size: 32.3357px;
+    line-height: 72px;
+}
+
+.flip-cvv {
+    width: 108px;
+    font-size: 42px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+}
+
