@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    overflow: hidden;
+
+    color: #FFFFFF;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
+.cover {
+    position: absolute;
+    bottom: 429px;
+    left: 373px;
+
+    z-index: 100;
+}
+
+.popup {
+    display: none;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.popup.show {
+    display: block;
+}
+
+.close-block {
+    margin-left: 57px;
+    margin-bottom: 13px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px
+}
+
+.close-label {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #3200A0;
+}
+
+.cover:hover {
+    cursor: pointer;
+}
+
+.close-block:hover,
+.arrow:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.popup-content {
+    width: 520.56px;
+    height: 590.15px;
+    padding: 46px 20px 55px 57px;
+
+    background: #8D58FF;
+}
+
+.title {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 94px;
+    line-height: 73px;
+    margin-bottom: 16px;
+}
+
+.input-block {
+    margin-top: 45px;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #FAFF00;
+}
+
+.input {
+    all: unset;
+    box-sizing: border-box;
+    width: 323.54px;
+    height: 55.35px;
+    padding-left: 16px;
+    color: #000;
+
+    background: #C6ACFF;
+    opacity: 0.6;
+    border-radius: 4px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
