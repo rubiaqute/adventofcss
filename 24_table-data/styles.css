@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.container {
+    padding: 112px 57px 92px 72px;
+}
+
+.table {
+    width: 100%;
+    border-collapse:collapse;
+    border-bottom: 2px solid #3C3744;
+}
+
+th {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    padding-bottom: 15px;
+
+    color: #363DAA;
+}
+
+tr:not(:last-child) {
+    border-bottom: 2px solid #DDE8F7;
+}
+
+td {
+    padding: 8px 12px 8px 0;
+}
+
+.head-row{
+    border-bottom: 2px solid #3C3744;
+}
+
+th:not(:first-child) {
+    padding-left: 28px;
+}
+
+.headCell {
+    display: flex;
+    align-content: center;
+    gap: 8px;
+}
+
+.emailColumn {
+    width: 33%;
+}
+
+.jobColumn {
+    width: 32%;
+}
+
+.nameColumn {
+    width: 22%;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    content: '';
+    width: 17px;
+    height: 11px;
+    background: url("./images/sort-inactive.svg") no-repeat bottom;
+}
+
+.icon.up {
+    transform: rotate(180deg);
+}
+
+.icon.active {
+    background: url("./images/sort-active.svg") no-repeat bottom;
+}
+
+.icon:hover,
+.control:hover,
+.chevron:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.control {
+    content: '';
+    width: 100%;
+    height: 32px;
+    background: url("./images/edit.svg") no-repeat center;
+}
+
+.control.active {
+    background: url("./images/update.svg") no-repeat center;
+}
+
+.input-table,
+.pagination-input  {
+    all: unset;
+    box-sizing: border-box;
+    height: 55px;
+    padding: 16px;
+    width: 100%;
+
+    background: #EDF4F9;
+    border-radius: 4px;
+}
+
+.pagination-input {
+    width: 47px;
+    margin: 0 12px 0 25px;
+}
+
+
+.static-table-content {
+    height: 55px;
+    padding: 16px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-total {
+    margin-right: 18px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Table</title>
+     <style>
+        [v-cloak]{
+          display: none;
+        }
+      </style>
+</head>
+<body>
+    <div class="container" id="app" v-cloak>
+      <table class="table">
+        <thead class="thead">
+          <tr class="head-row">
+            <th class="idColumn">
+              <div class="headCell">
+                ID 
+                <div class="sorting">
+                  <div :class="{icon: true, up: true, active: isSortingActive(sortDirections.asc, sortFields.id)}" @click="changeSorting(sortDirections.asc, sortFields.id)"></div>
+                  <div :class="{icon: true, active: isSortingActive(sortDirections.desc, sortFields.id)}" @click="changeSorting(sortDirections.desc, sortFields.id)"></div>
+                </div>
+              </div>
+            </th>
+            <th class="nameColumn">
+              <div class="headCell">
+                Name
+                <div class="sorting">
+                  <div :class="{icon: true, up: true, active: isSortingActive(sortDirections.asc, sortFields.name)}" @click="changeSorting(sortDirections.asc, sortFields.name)"></div>
+                  <div :class="{icon: true, active: isSortingActive(sortDirections.desc, sortFields.name)}" @click="changeSorting(sortDirections.desc, sortFields.name)"></div>
+                </div>
+              </div>
+            </th>
+            <th class="emailColumn">
+              <div class="headCell">
+                Email Address
+                <div class="sorting">
+                  <div :class="{icon: true, up: true, active: isSortingActive(sortDirections.asc, sortFields.email)}" @click="changeSorting(sortDirections.asc, sortFields.email)"></div>
+                  <div :class="{icon: true, active: isSortingActive(sortDirections.desc, sortFields.email)}" @click="changeSorting(sortDirections.desc, sortFields.email)"></div>
+                </div>
+              </div>
+            </th>
+            <th class="jobColumn">
+              <div class="headCell">
+                Job Title
+                <div class="sorting">
+                  <div :class="{icon: true, up: true, active: isSortingActive(sortDirections.asc, sortFields.job)}" @click="changeSorting(sortDirections.asc, sortFields.job)"></div>
+                  <div :class="{icon: true, active: isSortingActive(sortDirections.desc, sortFields.job)}" @click="changeSorting(sortDirections.desc, sortFields.job)"></div>
+                </div>
+              </div>
+            </th>
+            <th class="controlColumn"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="person in paginatedPersonList">
+            <td>{{person.id}}</td>
+            <td><input autofocus type="text" class="input-table" v-model="selectedPerson.name" v-if="isPersonSelected(person.id)"><div class="static-table-content" v-if="!isPersonSelected(person.id)">{{person.name}}</div></td>
+            <td><input type="text" class="input-table" v-model="selectedPerson.email" v-if="isPersonSelected(person.id)"><div class="static-table-content" v-if="!isPersonSelected(person.id)">{{person.email}}</div></td>
+            <td><input type="text" class="input-table" v-model="selectedPerson.jobTitle" v-if="isPersonSelected(person.id)"><div class="static-table-content" v-if="!isPersonSelected(person.id)">{{person.jobTitle}}</div></td>
+            <td><div :class="{control: true, active: isPersonSelected(person.id)}" @click="selectPerson(person)"></div></td>
+          </tr>
+        </tbody>
+        
+      </table>
+      <div class="footer">
+      <div class="total-block">{{personList.length}} Results</div>
+      <div class="pagination">
+        <img class="chevron" src="./images/chevron--left.svg" alt="" @click="decreaseActivePage">
+        <input class="pagination-input" type="text" v-model="activePage" @change="changeActivePage">
+        <div class="pagination-total">of {{totalPages}}</div>
+        <img class="chevron" src="./images/chevron--right.svg" alt="" @click="increaseActivePage">
+      </div>
+      </div>
+        
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

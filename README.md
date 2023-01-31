@@ -95,3 +95,7 @@ Only desktop version is available.
 - Deploy: https://rubiaqute-toaster-popup.netlify.app/
 - Technologies: HTML/JS/CSS
 
+23. Table Data
+- Deploy: https://rubiaqute-table.netlify.app/
+- Technologies: HTML/Vue/CSS
+
